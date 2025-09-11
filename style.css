@@ -1,0 +1,82 @@
+@import url('https://fonts.google.com/specimen/Inter');
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+}
+
+html {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--grey900);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+
+main {
+  background-color: var(--grey800);
+  width: 300px;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 50%;
+  width: 70px;
+  margin-top: 15px;
+}
+
+.profile-name {
+  color: var(--white);
+  margin-bottom: 0px;
+}
+
+.location {
+  color: var(--green);
+  font-size: .9rem;
+}
+
+.bio {
+  color: var(--white);
+  opacity: .9;
+  font-size: .9rem;
+
+}
+
+button {
+  color: var(--white);
+  background-color: var(--grey700);
+  opacity: .8;
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+button:hover, button:focus {
+  background-color: var(--green);
+  color: black;
+  cursor: pointer;
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 10px;}
+.attribution a { color: hsl(228, 45%, 44%); }
